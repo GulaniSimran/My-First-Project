@@ -1,0 +1,104 @@
+/*class selector*/
+.para {
+    color: lightcoral;
+    font-size: 200px;
+    text-align: center;
+}
+img {
+    width: 500px;
+    height: 500px;
+}
+.img1 {
+    width: 200px;
+    height: 200px;
+    border: 5px groove olivedrab;
+}.img2 {
+    width: 200px;
+    height: 200px;
+    border: 5px solid greenyellow;
+}.img3 {
+    width: 200px;
+    height: 200px;
+    border: 5px dotted lightpink;
+}.img4 {
+    width: 200px;
+    height: 200px;
+    border: 5px dashed crimson;
+}.img5 {
+    width: 200px;
+    height: 200px;
+    border: 5px groove rebeccapurple;
+}
+ /*element selector*/
+ div {
+     width: 1000px;
+     height: 500px;
+     background-image: url("Images/QA.jpg");
+     border: 10px groove powderblue;
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 50%;
+     /*display: inline-block;*/
+ }
+ /*ID selector*/
+ #paraid {
+     color: burlywood;
+ }
+ /*attribute selector*/
+[class=attrsel] {
+    color: cadetblue;
+}
+/*pseudo-class selector - : */
+/* link - visited - hover - active */
+a:link {
+    color: green;
+}
+a:visited {
+    color: darkblue;
+}
+a:hover {
+    color: darkred;
+}
+a:active {
+    color: yellow;
+}
+/*pseudo class nth child*/
+li:first-child {
+    color: navajowhite;
+}
+li:last-child {
+    color: burlywood;
+}
+li:nth-child(even) {
+    background-color: lightpink;
+}
+li:nth-child(odd) {
+    background-color: lightcoral;
+}
+ul:first-child {
+    width: 200px;
+    text-align: center;
+}
+/*pseudo-class typography*/
+/*pseudo-element selector - :: */
+/*p::first-letter {*/
+/*    color: mediumvioletred;*/
+/*    font-size: 36px;*/
+/*    font-family: Corbel;*/
+/*}*/
+/*every p tag within div - R to L*/
+div p {
+    color: darkorange;
+}
+/*p that is immediate child of div*/
+div > p {
+    color: deeppink;
+}
+/*p that is sibling of div and following it*/
+div ~ p {
+    color: goldenrod;
+}
+/*p that is immediate sibling of div and following it*/
+div + p {
+    color: lightsalmon;
+}
